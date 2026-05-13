@@ -9,9 +9,8 @@ const nextConfig: NextConfig = {
   // Next.js 15.5+: typed routes live here — never use `experimental.typedRoutes`.
   // Off: next-intl localized pathnames + dynamic segments are easier without strict href typing.
   typedRoutes: false,
-  experimental: {
-    optimizePackageImports: ['next-intl']
-  },
+  // Do not use `optimizePackageImports: ['next-intl']` — Next 15.5's barrel
+  // optimizer omits `hasLocale` and breaks `next build` on Vercel.
   images: {
     formats: ['image/avif', 'image/webp'],
     remotePatterns: [

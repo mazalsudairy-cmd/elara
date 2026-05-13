@@ -1,8 +1,9 @@
 import type { Metadata, Viewport } from 'next';
-import { NextIntlClientProvider, hasLocale } from 'next-intl';
+import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing, localeDirection, type Locale } from '@/i18n/routing';
+import { isAppLocale } from '@/i18n/locale-utils';
 import { getFontClassName } from '@/lib/fonts';
 import '@/styles/globals.css';
 
@@ -27,7 +28,7 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  if (!hasLocale(routing.locales, locale)) {
+  if (!isAppLocale(locale)) {
     return {};
   }
   const t = await getTranslations({ locale, namespace: 'seo' });
@@ -103,7 +104,7 @@ export default async function LocaleLayout({
 }): Promise<React.JSX.Element> {
   const { locale } = await params;
 
-  if (!hasLocale(routing.locales, locale)) {
+  if (!isAppLocale(locale)) {
     notFound();
   }
 

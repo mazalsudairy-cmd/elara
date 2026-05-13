@@ -1,7 +1,6 @@
 import { getRequestConfig } from 'next-intl/server';
-import { hasLocale } from 'next-intl';
-import { notFound } from 'next/navigation';
 import { routing, type Locale } from './routing';
+import { isAppLocale } from './locale-utils';
 
 /**
  * Server-side request configuration for next-intl.
@@ -16,15 +15,7 @@ import { routing, type Locale } from './routing';
  */
 export default getRequestConfig(async ({ requestLocale }) => {
   const requested = await requestLocale;
-  const locale: Locale = hasLocale(routing.locales, requested)
-    ? requested
-    : routing.defaultLocale;
-
-  // Defensive: if someone hits an unknown locale segment in production,
-  // surface a 404 instead of silently falling back.
-  if (!hasLocale(routing.locales, locale)) {
-    notFound();
-  }
+  const locale: Locale = isAppLocale(requested) ? requested : routing.defaultLocale;
 
   const messages = (await import(`../../messages/${locale}.json`)).default;
 
