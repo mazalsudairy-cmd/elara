@@ -31,12 +31,12 @@
   --color-info: #2A4F6B;
   --color-info-soft: #DEE7EE;
 
-  /* Typography */
-  --font-sans-en: 'Satoshi', 'Inter', ui-sans-serif, system-ui, -apple-system,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  /* Typography — primary faces come from next/font via --font-elara-* on <html> */
+  --font-sans-en: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, sans-serif;
   --font-sans-ar: 'IBM Plex Sans Arabic', 'Noto Naskh Arabic',
     'Segoe UI Arabic', Tahoma, system-ui, sans-serif;
-  --font-display-en: 'Satoshi', Georgia, 'Times New Roman', serif;
+  --font-display-en: ui-sans-serif, system-ui, -apple-system, Georgia, serif;
   --font-display-ar: 'IBM Plex Sans Arabic', 'Noto Naskh Arabic', serif;
 
   /* Type scale (mobile-first, then up at >=md via clamp) */
@@ -100,13 +100,13 @@
   /* Locale-driven typography. The <html> element gets `lang` and `dir`
      attributes from the layout; we switch font stacks accordingly. */
   html[lang^='ar'] body {
-    font-family: var(--font-sans-ar);
+    font-family: var(--font-elara-ar), var(--font-sans-ar);
     font-feature-settings: 'kern', 'liga', 'calt';
     letter-spacing: 0;
   }
 
   html[lang^='en'] body {
-    font-family: var(--font-sans-en);
+    font-family: var(--font-elara-en), var(--font-sans-en);
     letter-spacing: -0.005em;
   }
 
@@ -121,7 +121,7 @@
   html[lang^='ar'] h2,
   html[lang^='ar'] h3,
   html[lang^='ar'] h4 {
-    font-family: var(--font-display-ar);
+    font-family: var(--font-elara-ar), var(--font-display-ar);
     font-weight: 600;
     line-height: 1.25;
   }
@@ -129,7 +129,7 @@
   html[lang^='en'] h2,
   html[lang^='en'] h3,
   html[lang^='en'] h4 {
-    font-family: var(--font-display-en);
+    font-family: var(--font-elara-en), var(--font-display-en);
     font-weight: 600;
     letter-spacing: -0.02em;
   }

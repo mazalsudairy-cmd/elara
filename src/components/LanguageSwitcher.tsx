@@ -11,6 +11,18 @@ import {
   type Locale
 } from '@/i18n/routing';
 
+function normalizeRouteParams(
+  params: ReturnType<typeof useParams>
+): Record<string, string> {
+  const out: Record<string, string> = {};
+  if (params == null || typeof params !== 'object') return out;
+  for (const [key, value] of Object.entries(params)) {
+    if (value == null) continue;
+    out[key] = Array.isArray(value) ? String(value[0] ?? '') : String(value);
+  }
+  return out;
+}
+
 interface LanguageSwitcherProps {
   /**
    * Visual variant.
@@ -50,15 +62,20 @@ export function LanguageSwitcher({
   const switchTo = (next: Locale): void => {
     if (next === activeLocale) return;
     startTransition(() => {
-      // `pathname` here is the un-localized canonical pathname (from
-      // next-intl's usePathname). Combined with the current dynamic params,
-      // next-intl will rebuild the correct localized URL for `next`.
-      router.replace(
-        // @ts-expect-error -- next-intl typed routes require literal pathnames;
-        // for dynamic segments we pass params via the second argument.
-        { pathname, params },
-        { locale: next, scroll: false }
-      );
+      const normalized = normalizeRouteParams(params);
+      const hasParams = Object.keys(normalized).length > 0;
+      // Typed routes can't express every dynamic pathname at compile time; the
+      // object shape is correct at runtime for next-intl's router.
+      if (hasParams) {
+        router.replace(
+          { pathname, params: normalized } as Parameters<
+            typeof router.replace
+          >[0],
+          { locale: next, scroll: false }
+        );
+      } else {
+        router.replace(pathname, { locale: next, scroll: false });
+      }
       onSwitched?.(next);
     });
   };

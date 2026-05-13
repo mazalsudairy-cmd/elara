@@ -111,8 +111,9 @@ export default async function LocaleLayout({
   setRequestLocale(locale);
 
   const messages = await getMessages();
-  const dir = localeDirection[locale];
-  const fontClass = getFontClassName(locale);
+  const loc = locale as Locale;
+  const dir = localeDirection[loc];
+  const fontClass = getFontClassName(loc);
 
   return (
     <html
