@@ -1,0 +1,755 @@
+{
+  "common": {
+    "brand": "إلارا",
+    "brandFull": "إلارا بيس",
+    "tagline": "حضور هادئ. تفاصيل مقصودة.",
+    "currency": "ر.س",
+    "skipToContent": "تخطي إلى المحتوى الرئيسي",
+    "languageSwitcher": {
+      "label": "تغيير اللغة",
+      "current": "اللغة الحالية"
+    },
+    "actions": {
+      "addToCart": "إضافة إلى السلة",
+      "addToWishlist": "حفظ في المفضلة",
+      "removeFromWishlist": "إزالة من المفضلة",
+      "buyNow": "اشترِ الآن",
+      "checkout": "إتمام الشراء",
+      "continueShopping": "متابعة التسوق",
+      "viewCart": "عرض السلة",
+      "viewDetails": "عرض التفاصيل",
+      "viewAll": "عرض الكل",
+      "save": "حفظ",
+      "edit": "تعديل",
+      "delete": "حذف",
+      "remove": "إزالة",
+      "cancel": "إلغاء",
+      "confirm": "تأكيد",
+      "submit": "إرسال",
+      "back": "رجوع",
+      "next": "التالي",
+      "previous": "السابق",
+      "search": "بحث",
+      "close": "إغلاق",
+      "tryAgain": "إعادة المحاولة",
+      "copy": "نسخ",
+      "copied": "تم النسخ",
+      "share": "مشاركة"
+    },
+    "labels": {
+      "loading": "جارٍ التحميل",
+      "free": "مجاناً",
+      "newBadge": "جديد",
+      "soldOut": "نفذت الكمية",
+      "limitedStock": "كمية محدودة",
+      "bestSeller": "الأكثر مبيعاً",
+      "size": "المقاس",
+      "color": "اللون",
+      "quantity": "الكمية",
+      "total": "الإجمالي",
+      "subtotal": "المجموع الجزئي",
+      "shipping": "الشحن",
+      "vat": "ضريبة القيمة المضافة",
+      "discount": "الخصم",
+      "orderNumber": "رقم الطلب",
+      "orderDate": "تاريخ الطلب",
+      "status": "الحالة",
+      "yes": "نعم",
+      "no": "لا",
+      "optional": "اختياري",
+      "required": "مطلوب"
+    },
+    "time": {
+      "justNow": "الآن",
+      "minutesAgo": "{count} دقيقة مضت",
+      "hoursAgo": "{count} ساعة مضت",
+      "daysAgo": "{count} يوم مضى"
+    }
+  },
+
+  "nav": {
+    "primary": {
+      "home": "الرئيسية",
+      "shop": "التسوق",
+      "newArrivals": "وصل حديثاً",
+      "bestSellers": "الأكثر مبيعاً",
+      "collections": "المجموعات",
+      "about": "عن إلارا",
+      "contact": "تواصل معنا"
+    },
+    "utility": {
+      "account": "حسابي",
+      "login": "تسجيل الدخول",
+      "signup": "إنشاء حساب",
+      "logout": "تسجيل الخروج",
+      "wishlist": "المفضلة",
+      "cart": "السلة",
+      "search": "ابحث عن منتج",
+      "searchPlaceholder": "ابحث عن منتج، فئة، أو مجموعة"
+    },
+    "footer": {
+      "shop": "التسوق",
+      "company": "الشركة",
+      "support": "الدعم",
+      "legal": "السياسات",
+      "newsletterTitle": "ابقَ على اطلاع",
+      "newsletterDescription": "اشترك لتصلك إصدارات المجموعات الجديدة قبل الجميع.",
+      "newsletterPlaceholder": "بريدك الإلكتروني",
+      "newsletterCta": "اشتراك",
+      "rights": "© {year} إلارا بيس. جميع الحقوق محفوظة.",
+      "vatNumber": "الرقم الضريبي: {vat}",
+      "crNumber": "السجل التجاري: {cr}",
+      "payment": "وسائل الدفع المدعومة"
+    },
+    "mobileMenu": {
+      "open": "فتح القائمة",
+      "close": "إغلاق القائمة"
+    }
+  },
+
+  "home": {
+    "hero": {
+      "eyebrow": "موسم جديد",
+      "title": "قطعٌ تختار البقاء",
+      "subtitle": "تصاميم مدروسة بهدوء، مصنوعة لتبقى معك أطول.",
+      "primaryCta": "تسوّق المجموعة",
+      "secondaryCta": "اكتشف القصة"
+    },
+    "categories": {
+      "title": "تصفّح حسب الفئة",
+      "subtitle": "كل فئة منتقاة بتأنٍ، لتسهّل عليك الاختيار."
+    },
+    "featured": {
+      "title": "مختارات إلارا",
+      "subtitle": "قطع نوصي بها هذا الأسبوع."
+    },
+    "story": {
+      "eyebrow": "عن إلارا",
+      "title": "هدوء يُلمَس في التفاصيل",
+      "body": "نؤمن أن المنتج الجيد لا يصرخ. نختار خاماتنا بعناية، ونصمم بحدٍّ أدنى من الزخرفة، لتدوم القطعة وتتقادم بأناقة.",
+      "cta": "تعرّف على إلارا"
+    },
+    "reassurance": {
+      "shipping": {
+        "title": "شحن مجاني داخل المملكة",
+        "subtitle": "للطلبات فوق 250 ر.س"
+      },
+      "returns": {
+        "title": "استبدال خلال 14 يوم",
+        "subtitle": "إجراءات بسيطة، بلا عناء"
+      },
+      "support": {
+        "title": "دعم باللغة العربية",
+        "subtitle": "نُجيبك خلال ساعات العمل"
+      },
+      "secure": {
+        "title": "دفع آمن",
+        "subtitle": "حماية كاملة لبياناتك"
+      }
+    },
+    "newArrivals": {
+      "title": "وصل حديثاً",
+      "cta": "عرض الكل"
+    },
+    "bestSellers": {
+      "title": "الأكثر مبيعاً",
+      "cta": "عرض الكل"
+    },
+    "editorial": {
+      "title": "من اليوميات",
+      "subtitle": "مقالات قصيرة حول الذوق، الخامة، والاختيار."
+    }
+  },
+
+  "shop": {
+    "title": "متجر إلارا",
+    "subtitle": "تصفّح جميع المنتجات، أو استخدم الفلاتر لتضييق الاختيار.",
+    "results": {
+      "count": "{count} منتج",
+      "countPlural": "{count} منتجات",
+      "empty": "لا توجد منتجات تطابق اختيارك.",
+      "emptyHelp": "جرّب تعديل الفلاتر، أو استعرض جميع المنتجات."
+    },
+    "filters": {
+      "title": "الفلاتر",
+      "open": "فتح الفلاتر",
+      "close": "إغلاق الفلاتر",
+      "clear": "مسح الفلاتر",
+      "apply": "تطبيق",
+      "category": "الفئة",
+      "collection": "المجموعة",
+      "price": "السعر",
+      "size": "المقاس",
+      "color": "اللون",
+      "availability": "التوفّر",
+      "inStock": "متوفّر",
+      "outOfStock": "نفذت الكمية",
+      "priceMin": "من",
+      "priceMax": "إلى"
+    },
+    "sort": {
+      "label": "الترتيب",
+      "newest": "الأحدث",
+      "bestSelling": "الأكثر مبيعاً",
+      "priceAsc": "السعر: من الأقل",
+      "priceDesc": "السعر: من الأعلى",
+      "name": "الاسم"
+    },
+    "view": {
+      "grid": "عرض شبكي",
+      "list": "عرض قائمة"
+    }
+  },
+
+  "product": {
+    "labels": {
+      "sku": "رمز المنتج",
+      "availability": "التوفّر",
+      "color": "اللون",
+      "size": "المقاس",
+      "selectSize": "اختر المقاس",
+      "selectColor": "اختر اللون",
+      "sizeGuide": "دليل المقاسات",
+      "material": "الخامة",
+      "care": "العناية",
+      "dimensions": "المقاسات",
+      "weight": "الوزن",
+      "shipsFrom": "يُشحن من",
+      "rating": "التقييم",
+      "reviewsCount": "{count} تقييم",
+      "reviewsCountPlural": "{count} تقييمات",
+      "writeReview": "اكتب تقييماً",
+      "shareProduct": "مشاركة المنتج"
+    },
+    "stock": {
+      "inStock": "متوفّر",
+      "lowStock": "تبقّى {count} فقط",
+      "outOfStock": "نفذت الكمية",
+      "notifyMe": "أعلمني عند التوفّر",
+      "preorder": "طلب مسبق"
+    },
+    "tabs": {
+      "description": "الوصف",
+      "details": "التفاصيل والخامة",
+      "shipping": "الشحن والإرجاع",
+      "reviews": "التقييمات"
+    },
+    "related": {
+      "title": "قد يعجبك أيضاً",
+      "completeLook": "أكمل الإطلالة"
+    },
+    "recentlyViewed": {
+      "title": "شاهدتَ مؤخراً"
+    },
+    "trust": {
+      "freeShipping": "شحن مجاني للطلبات فوق 250 ر.س",
+      "easyReturns": "استبدال سهل خلال 14 يوم",
+      "securePayment": "دفع آمن ومحمي"
+    }
+  },
+
+  "cart": {
+    "title": "سلة التسوق",
+    "empty": {
+      "title": "سلتك فارغة",
+      "subtitle": "لم تضف أي منتج بعد. تصفّح المتجر وابدأ باختيار قطعك المفضّلة.",
+      "cta": "تصفّح المتجر"
+    },
+    "item": {
+      "remove": "إزالة",
+      "increase": "زيادة الكمية",
+      "decrease": "تقليل الكمية",
+      "quantityLabel": "الكمية",
+      "color": "اللون: {value}",
+      "size": "المقاس: {value}"
+    },
+    "summary": {
+      "title": "ملخّص الطلب",
+      "subtotal": "المجموع الجزئي",
+      "shipping": "الشحن",
+      "shippingFree": "مجاناً",
+      "shippingCalculated": "يُحتسب عند الدفع",
+      "vat": "ضريبة القيمة المضافة (15%)",
+      "discount": "الخصم",
+      "total": "الإجمالي",
+      "promoTitle": "كود خصم",
+      "promoPlaceholder": "أدخل الكود",
+      "promoApply": "تطبيق",
+      "promoApplied": "تم تطبيق الكود {code}",
+      "promoRemove": "إزالة",
+      "checkoutCta": "إتمام الشراء",
+      "secureNote": "تتم معالجة المدفوعات بأمان كامل."
+    },
+    "reassurance": {
+      "shipping": "شحن مجاني داخل المملكة فوق 250 ر.س",
+      "returns": "استبدال أو استرجاع خلال 14 يوم",
+      "support": "دعم باللغة العربية خلال أيام العمل"
+    }
+  },
+
+  "checkout": {
+    "title": "إتمام الشراء",
+    "steps": {
+      "contact": "التواصل",
+      "shipping": "الشحن",
+      "payment": "الدفع",
+      "review": "المراجعة"
+    },
+    "contact": {
+      "title": "بيانات التواصل",
+      "subtitle": "سنرسل لك إشعارات الطلب على هذا البريد.",
+      "email": "البريد الإلكتروني",
+      "phone": "رقم الجوال",
+      "phoneHelp": "نحتاج رقم جوّالك لتنسيق التوصيل.",
+      "guestNote": "تتم متابعة طلبك كزائر. يمكنك إنشاء حساب لاحقاً.",
+      "haveAccount": "لديك حساب؟",
+      "loginLink": "سجّل الدخول"
+    },
+    "shipping": {
+      "title": "عنوان الشحن",
+      "fullName": "الاسم الكامل",
+      "country": "الدولة",
+      "city": "المدينة",
+      "district": "الحي",
+      "street": "الشارع",
+      "buildingNumber": "رقم المبنى",
+      "postalCode": "الرمز البريدي",
+      "additionalNumber": "الرقم الإضافي",
+      "notes": "ملاحظات للسائق (اختياري)",
+      "saveAddress": "حفظ هذا العنوان لطلبات لاحقة",
+      "shippingMethod": "طريقة الشحن",
+      "methodStandard": "توصيل قياسي (2-4 أيام عمل)",
+      "methodExpress": "توصيل سريع (1-2 يوم عمل)"
+    },
+    "payment": {
+      "title": "طريقة الدفع",
+      "card": "بطاقة بنكية",
+      "cardName": "الاسم على البطاقة",
+      "cardNumber": "رقم البطاقة",
+      "cardExpiry": "تاريخ الانتهاء",
+      "cardCvc": "رمز الأمان",
+      "applePay": "Apple Pay",
+      "mada": "مدى",
+      "cod": "الدفع عند الاستلام",
+      "codFee": "تُضاف رسوم 20 ر.س للدفع عند الاستلام",
+      "billingSame": "عنوان الفوترة نفس عنوان الشحن"
+    },
+    "review": {
+      "title": "مراجعة الطلب",
+      "editContact": "تعديل بيانات التواصل",
+      "editShipping": "تعديل عنوان الشحن",
+      "editPayment": "تعديل طريقة الدفع",
+      "terms": "بإتمام الطلب، أنت توافق على {terms} و{privacy}.",
+      "termsLink": "الشروط والأحكام",
+      "privacyLink": "سياسة الخصوصية",
+      "placeOrder": "تأكيد الطلب",
+      "processing": "جارٍ معالجة الطلب…"
+    },
+    "success": {
+      "title": "تم استلام طلبك",
+      "subtitle": "شكراً لثقتك في إلارا. أرسلنا تأكيد الطلب إلى {email}.",
+      "orderNumber": "رقم الطلب",
+      "estimatedDelivery": "التوصيل المتوقع",
+      "trackOrder": "تتبّع الطلب",
+      "continueShopping": "متابعة التسوق",
+      "createAccountPrompt": "أنشئ حساباً لتتبّع طلبك بسهولة"
+    }
+  },
+
+  "account": {
+    "title": "حسابي",
+    "greeting": "أهلاً، {name}",
+    "tabs": {
+      "overview": "نظرة عامة",
+      "orders": "طلباتي",
+      "addresses": "العناوين",
+      "wishlist": "المفضلة",
+      "returns": "الاسترجاع",
+      "notifications": "الإشعارات",
+      "security": "الأمان",
+      "sessions": "الأجهزة"
+    },
+    "overview": {
+      "recentOrders": "آخر الطلبات",
+      "savedAddresses": "العناوين المحفوظة",
+      "wishlistCount": "{count} منتج في المفضلة",
+      "noOrders": "لا توجد طلبات بعد."
+    },
+    "orders": {
+      "title": "طلباتي",
+      "empty": "لم تنشئ أي طلب بعد.",
+      "statusPending": "قيد المعالجة",
+      "statusConfirmed": "تم التأكيد",
+      "statusPacked": "جاهز للشحن",
+      "statusShipped": "في الطريق إليك",
+      "statusDelivered": "تم التوصيل",
+      "statusCancelled": "ملغي",
+      "statusReturned": "تم الاسترجاع",
+      "viewDetails": "تفاصيل الطلب",
+      "reorder": "إعادة الطلب",
+      "requestReturn": "طلب استرجاع"
+    },
+    "addresses": {
+      "title": "عناويني",
+      "addNew": "إضافة عنوان جديد",
+      "default": "العنوان الافتراضي",
+      "setDefault": "اجعله افتراضياً",
+      "empty": "لم تضف عنواناً بعد."
+    },
+    "wishlist": {
+      "title": "المفضلة",
+      "empty": "لا يوجد منتجات في المفضلة.",
+      "moveToCart": "نقل إلى السلة"
+    },
+    "returns": {
+      "title": "طلبات الاسترجاع",
+      "empty": "لا توجد طلبات استرجاع.",
+      "newRequest": "طلب استرجاع جديد",
+      "reason": "سبب الاسترجاع",
+      "reasonOptions": {
+        "size": "المقاس غير مناسب",
+        "quality": "الجودة لا تطابق التوقعات",
+        "damaged": "وصل المنتج تالفاً",
+        "wrongItem": "المنتج غير المطلوب",
+        "other": "سبب آخر"
+      },
+      "notes": "تفاصيل إضافية",
+      "submit": "إرسال طلب الاسترجاع"
+    },
+    "notifications": {
+      "title": "الإشعارات",
+      "empty": "لا توجد إشعارات.",
+      "markAllRead": "تعليم الكل كمقروء",
+      "preferences": "تفضيلات الإشعارات",
+      "channels": {
+        "email": "البريد الإلكتروني",
+        "sms": "الرسائل القصيرة",
+        "push": "إشعارات الموقع"
+      },
+      "topics": {
+        "orderUpdates": "تحديثات الطلبات",
+        "promotions": "العروض والخصومات",
+        "newArrivals": "المنتجات الجديدة",
+        "newsletter": "النشرة البريدية"
+      }
+    },
+    "security": {
+      "title": "إعدادات الأمان",
+      "changePassword": "تغيير كلمة المرور",
+      "currentPassword": "كلمة المرور الحالية",
+      "newPassword": "كلمة المرور الجديدة",
+      "confirmPassword": "تأكيد كلمة المرور",
+      "twoFactor": "التحقق بخطوتين",
+      "twoFactorComing": "قريباً — التحقق برمز يصلك على جوّالك.",
+      "deleteAccount": "حذف الحساب",
+      "deleteWarning": "هذا الإجراء نهائي ولا يمكن التراجع عنه."
+    },
+    "sessions": {
+      "title": "الأجهزة النشطة",
+      "current": "هذا الجهاز",
+      "lastActive": "آخر نشاط",
+      "signOutAll": "تسجيل الخروج من جميع الأجهزة",
+      "empty": "لا توجد جلسات أخرى."
+    },
+    "profile": {
+      "title": "البيانات الشخصية",
+      "firstName": "الاسم الأول",
+      "lastName": "اسم العائلة",
+      "email": "البريد الإلكتروني",
+      "phone": "رقم الجوال",
+      "language": "لغة الواجهة"
+    }
+  },
+
+  "auth": {
+    "login": {
+      "title": "تسجيل الدخول",
+      "subtitle": "أهلاً بعودتك إلى إلارا.",
+      "email": "البريد الإلكتروني",
+      "password": "كلمة المرور",
+      "remember": "تذكّرني",
+      "forgot": "نسيت كلمة المرور؟",
+      "submit": "تسجيل الدخول",
+      "noAccount": "ليس لديك حساب؟",
+      "createAccount": "إنشاء حساب جديد",
+      "guestCheckout": "متابعة كزائر"
+    },
+    "signup": {
+      "title": "إنشاء حساب",
+      "subtitle": "أنشئ حسابك للتسوق بسهولة، وتتبّع طلباتك.",
+      "firstName": "الاسم الأول",
+      "lastName": "اسم العائلة",
+      "email": "البريد الإلكتروني",
+      "phone": "رقم الجوال",
+      "password": "كلمة المرور",
+      "passwordHelp": "8 أحرف على الأقل، تتضمن رقماً وحرفاً كبيراً.",
+      "marketingOptIn": "أرغب باستلام عروض إلارا الجديدة.",
+      "terms": "بإنشاء حسابك، أنت توافق على {terms} و{privacy}.",
+      "submit": "إنشاء حساب",
+      "haveAccount": "لديك حساب؟",
+      "loginLink": "تسجيل الدخول"
+    },
+    "forgot": {
+      "title": "استعادة كلمة المرور",
+      "subtitle": "أدخل بريدك الإلكتروني، وسنرسل لك رابط إعادة التعيين.",
+      "email": "البريد الإلكتروني",
+      "submit": "إرسال الرابط",
+      "sentTitle": "تم الإرسال",
+      "sentBody": "إذا كان البريد مسجلاً لدينا، ستصلك رسالة خلال دقائق.",
+      "backToLogin": "العودة إلى تسجيل الدخول"
+    },
+    "reset": {
+      "title": "إعادة تعيين كلمة المرور",
+      "subtitle": "اختر كلمة مرور جديدة لحسابك.",
+      "newPassword": "كلمة المرور الجديدة",
+      "confirmPassword": "تأكيد كلمة المرور",
+      "submit": "تحديث كلمة المرور",
+      "successTitle": "تم تحديث كلمة المرور",
+      "successBody": "يمكنك الآن تسجيل الدخول بكلمة المرور الجديدة.",
+      "expiredTitle": "الرابط منتهي الصلاحية",
+      "expiredBody": "هذا الرابط لم يعد صالحاً. اطلب رابطاً جديداً."
+    },
+    "verifyEmail": {
+      "title": "تأكيد البريد الإلكتروني",
+      "subtitle": "أرسلنا رابط التأكيد إلى {email}.",
+      "resend": "إعادة إرسال الرابط",
+      "resent": "تم إرسال الرابط مرة أخرى.",
+      "checkSpam": "لا تجد الرسالة؟ تحقق من مجلد البريد غير المرغوب فيه.",
+      "verifying": "جارٍ التحقق…",
+      "successTitle": "تم تأكيد البريد",
+      "successBody": "شكراً لك. يمكنك الآن متابعة التسوّق.",
+      "errorTitle": "تعذّر تأكيد البريد",
+      "errorBody": "الرابط غير صالح أو منتهي الصلاحية."
+    },
+    "otpPlaceholder": {
+      "title": "التحقق برمز",
+      "subtitle": "ميزة التحقق برمز ستتوفر قريباً.",
+      "note": "نُعدّ هذه الميزة لتعزيز أمان حسابك. لن يؤثر ذلك على تجربة التسوّق الحالية."
+    }
+  },
+
+  "admin": {
+    "title": "لوحة الإدارة",
+    "nav": {
+      "overview": "نظرة عامة",
+      "orders": "الطلبات",
+      "fulfillment": "التنفيذ والشحن",
+      "products": "المنتجات",
+      "variants": "المتغيّرات",
+      "categories": "الفئات",
+      "collections": "المجموعات",
+      "inventory": "المخزون",
+      "customers": "العملاء",
+      "discounts": "أكواد الخصم",
+      "reviews": "التقييمات",
+      "banners": "البانرات",
+      "homepage": "إدارة الصفحة الرئيسية",
+      "settings": "الإعدادات",
+      "staff": "الموظفون والصلاحيات",
+      "audit": "سجلات التدقيق",
+      "emails": "قوالب البريد",
+      "otpSettings": "إعدادات التحقق (قريباً)"
+    },
+    "overview": {
+      "todayRevenue": "إيرادات اليوم",
+      "todayOrders": "طلبات اليوم",
+      "pendingOrders": "طلبات بانتظار التنفيذ",
+      "lowStock": "منتجات منخفضة المخزون",
+      "newCustomers": "عملاء جدد هذا الأسبوع",
+      "recentOrders": "آخر الطلبات",
+      "topProducts": "أفضل المنتجات"
+    },
+    "orders": {
+      "title": "الطلبات",
+      "search": "ابحث برقم الطلب أو اسم العميل",
+      "filters": {
+        "all": "الكل",
+        "pending": "قيد المعالجة",
+        "confirmed": "مؤكدة",
+        "packed": "جاهزة للشحن",
+        "shipped": "مشحونة",
+        "delivered": "موصّلة",
+        "cancelled": "ملغاة",
+        "returned": "مُسترجعة"
+      },
+      "columns": {
+        "number": "الرقم",
+        "customer": "العميل",
+        "items": "العناصر",
+        "total": "الإجمالي",
+        "status": "الحالة",
+        "payment": "الدفع",
+        "date": "التاريخ"
+      },
+      "actions": {
+        "markPacked": "تعليم كجاهز للشحن",
+        "markShipped": "تعليم كمشحون",
+        "markDelivered": "تعليم كموصّل",
+        "cancel": "إلغاء الطلب",
+        "refund": "استرداد المبلغ",
+        "printInvoice": "طباعة الفاتورة",
+        "printLabel": "طباعة بوليصة الشحن"
+      }
+    },
+    "products": {
+      "title": "المنتجات",
+      "addNew": "إضافة منتج جديد",
+      "bulkActions": "إجراءات جماعية",
+      "import": "استيراد",
+      "export": "تصدير",
+      "form": {
+        "name": "اسم المنتج",
+        "slug": "الرابط (Slug)",
+        "description": "الوصف",
+        "category": "الفئة",
+        "collection": "المجموعة",
+        "price": "السعر",
+        "compareAtPrice": "السعر قبل الخصم",
+        "cost": "التكلفة",
+        "sku": "رمز المنتج",
+        "barcode": "الباركود",
+        "weight": "الوزن (جم)",
+        "media": "الصور والفيديو",
+        "status": "الحالة",
+        "statusDraft": "مسوّدة",
+        "statusActive": "نشط",
+        "statusArchived": "مؤرشف",
+        "variants": "المتغيّرات (المقاس / اللون)",
+        "inventory": "المخزون",
+        "seo": "تحسين محركات البحث",
+        "metaTitle": "عنوان الميتا",
+        "metaDescription": "وصف الميتا",
+        "saveDraft": "حفظ كمسوّدة",
+        "publish": "نشر",
+        "bilingualNote": "املأ الحقول بالعربية والإنجليزية معاً قبل النشر."
+      }
+    },
+    "customers": {
+      "title": "العملاء",
+      "search": "ابحث بالاسم أو البريد",
+      "columns": {
+        "name": "الاسم",
+        "email": "البريد",
+        "phone": "الجوال",
+        "ordersCount": "عدد الطلبات",
+        "totalSpend": "إجمالي الإنفاق",
+        "lastOrder": "آخر طلب",
+        "joined": "تاريخ التسجيل"
+      }
+    },
+    "discounts": {
+      "title": "أكواد الخصم",
+      "addNew": "كود جديد",
+      "form": {
+        "code": "الكود",
+        "type": "النوع",
+        "typePercent": "نسبة مئوية",
+        "typeFixed": "مبلغ ثابت",
+        "typeFreeShipping": "شحن مجاني",
+        "value": "القيمة",
+        "minSubtotal": "الحد الأدنى للطلب",
+        "startsAt": "يبدأ في",
+        "endsAt": "ينتهي في",
+        "usageLimit": "الحد الأقصى للاستخدام",
+        "perCustomerLimit": "الحد لكل عميل",
+        "appliesTo": "ينطبق على",
+        "appliesAll": "جميع المنتجات",
+        "appliesCategory": "فئات محددة",
+        "appliesProducts": "منتجات محددة"
+      }
+    },
+    "common": {
+      "saved": "تم الحفظ",
+      "savedAt": "آخر حفظ {time}",
+      "unsavedChanges": "لديك تغييرات غير محفوظة",
+      "publishBilingual": "يجب إكمال المحتوى بالعربية والإنجليزية قبل النشر."
+    }
+  },
+
+  "errors": {
+    "generic": "حدث خطأ غير متوقع. يُرجى إعادة المحاولة.",
+    "network": "تعذّر الاتصال. تحقق من اتصالك بالإنترنت.",
+    "notFound": {
+      "title": "الصفحة غير موجودة",
+      "subtitle": "الرابط الذي بحثت عنه غير متاح. يمكنك العودة للرئيسية.",
+      "cta": "العودة للرئيسية"
+    },
+    "serverError": {
+      "title": "حدث خلل في الخادم",
+      "subtitle": "نعمل على المعالجة. حاول مرة أخرى بعد قليل.",
+      "cta": "إعادة المحاولة"
+    },
+    "unauthorized": "يجب تسجيل الدخول للوصول لهذه الصفحة.",
+    "forbidden": "ليست لديك صلاحية الوصول.",
+    "rateLimit": "محاولات كثيرة. حاول مجدداً بعد دقائق.",
+    "outOfStock": "هذا المنتج غير متوفر حالياً.",
+    "checkoutFailed": "تعذّر إتمام الدفع. لم نخصم أي مبلغ، حاول مرة أخرى.",
+    "addressInvalid": "العنوان غير مكتمل. تحقق من الحقول.",
+    "promoInvalid": "الكود غير صحيح أو منتهي الصلاحية.",
+    "session": {
+      "expired": "انتهت الجلسة. سجّل الدخول مرة أخرى."
+    },
+    "form": {
+      "title": "تعذّر الحفظ",
+      "subtitle": "يرجى مراجعة الحقول المظللة وإعادة المحاولة."
+    }
+  },
+
+  "success": {
+    "addedToCart": "تمت الإضافة إلى السلة",
+    "addedToWishlist": "تمت الإضافة إلى المفضلة",
+    "removedFromWishlist": "تمت الإزالة من المفضلة",
+    "savedChanges": "تم حفظ التغييرات",
+    "addressSaved": "تم حفظ العنوان",
+    "passwordUpdated": "تم تحديث كلمة المرور",
+    "verificationSent": "تم إرسال رسالة التحقق",
+    "subscribed": "تم الاشتراك بنجاح",
+    "copied": "تم النسخ"
+  },
+
+  "validation": {
+    "required": "هذا الحقل مطلوب",
+    "email": "البريد الإلكتروني غير صحيح",
+    "phone": "رقم الجوال غير صحيح",
+    "phoneSaudi": "أدخل رقم جوال سعودي (05XXXXXXXX)",
+    "minLength": "يجب أن لا يقل عن {min} حرفاً",
+    "maxLength": "يجب أن لا يزيد عن {max} حرفاً",
+    "minValue": "القيمة يجب أن لا تقل عن {min}",
+    "maxValue": "القيمة يجب أن لا تتجاوز {max}",
+    "passwordMatch": "كلمتا المرور غير متطابقتين",
+    "passwordWeak": "كلمة المرور ضعيفة. أضف رقماً وحرفاً كبيراً.",
+    "termsRequired": "يجب الموافقة على الشروط",
+    "postalCode": "الرمز البريدي يجب أن يتكوّن من 5 أرقام",
+    "cardNumber": "رقم البطاقة غير صحيح",
+    "cardExpiry": "تاريخ الانتهاء غير صحيح",
+    "cardCvc": "رمز الأمان غير صحيح",
+    "fileType": "نوع الملف غير مدعوم",
+    "fileSize": "حجم الملف يتجاوز الحد المسموح"
+  },
+
+  "seo": {
+    "titleTemplate": "%s | إلارا بيس",
+    "keywords": "إلارا, متجر إلكتروني سعودي, أزياء فاخرة, تسوق أونلاين, السعودية",
+    "home": {
+      "title": "إلارا بيس — قطعٌ مدروسة بهدوء",
+      "description": "متجر إلارا بيس: مجموعة منتقاة من القطع الفاخرة بأسلوب هادئ وذوق رفيع. شحن مجاني داخل المملكة فوق 250 ر.س."
+    },
+    "shop": {
+      "title": "تسوّق جميع المنتجات",
+      "description": "تصفّح مجموعة إلارا بيس الكاملة من القطع المختارة بعناية."
+    },
+    "product": {
+      "titleTemplate": "{name} — إلارا بيس"
+    },
+    "cart": {
+      "title": "سلة التسوق",
+      "description": "راجع منتجاتك قبل إتمام الشراء."
+    },
+    "checkout": {
+      "title": "إتمام الشراء"
+    },
+    "account": {
+      "title": "حسابي"
+    }
+  }
+}

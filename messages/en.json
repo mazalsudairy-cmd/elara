@@ -1,0 +1,755 @@
+{
+  "common": {
+    "brand": "Elara",
+    "brandFull": "ElaraBase",
+    "tagline": "Quiet presence. Deliberate detail.",
+    "currency": "SAR",
+    "skipToContent": "Skip to main content",
+    "languageSwitcher": {
+      "label": "Change language",
+      "current": "Current language"
+    },
+    "actions": {
+      "addToCart": "Add to cart",
+      "addToWishlist": "Save to wishlist",
+      "removeFromWishlist": "Remove from wishlist",
+      "buyNow": "Buy now",
+      "checkout": "Checkout",
+      "continueShopping": "Continue shopping",
+      "viewCart": "View cart",
+      "viewDetails": "View details",
+      "viewAll": "View all",
+      "save": "Save",
+      "edit": "Edit",
+      "delete": "Delete",
+      "remove": "Remove",
+      "cancel": "Cancel",
+      "confirm": "Confirm",
+      "submit": "Submit",
+      "back": "Back",
+      "next": "Next",
+      "previous": "Previous",
+      "search": "Search",
+      "close": "Close",
+      "tryAgain": "Try again",
+      "copy": "Copy",
+      "copied": "Copied",
+      "share": "Share"
+    },
+    "labels": {
+      "loading": "Loading",
+      "free": "Free",
+      "newBadge": "New",
+      "soldOut": "Sold out",
+      "limitedStock": "Limited stock",
+      "bestSeller": "Best seller",
+      "size": "Size",
+      "color": "Color",
+      "quantity": "Quantity",
+      "total": "Total",
+      "subtotal": "Subtotal",
+      "shipping": "Shipping",
+      "vat": "VAT",
+      "discount": "Discount",
+      "orderNumber": "Order number",
+      "orderDate": "Order date",
+      "status": "Status",
+      "yes": "Yes",
+      "no": "No",
+      "optional": "Optional",
+      "required": "Required"
+    },
+    "time": {
+      "justNow": "Just now",
+      "minutesAgo": "{count} min ago",
+      "hoursAgo": "{count} h ago",
+      "daysAgo": "{count} d ago"
+    }
+  },
+
+  "nav": {
+    "primary": {
+      "home": "Home",
+      "shop": "Shop",
+      "newArrivals": "New arrivals",
+      "bestSellers": "Best sellers",
+      "collections": "Collections",
+      "about": "About",
+      "contact": "Contact"
+    },
+    "utility": {
+      "account": "Account",
+      "login": "Sign in",
+      "signup": "Create account",
+      "logout": "Sign out",
+      "wishlist": "Wishlist",
+      "cart": "Cart",
+      "search": "Search products",
+      "searchPlaceholder": "Search products, categories, collections"
+    },
+    "footer": {
+      "shop": "Shop",
+      "company": "Company",
+      "support": "Support",
+      "legal": "Legal",
+      "newsletterTitle": "Stay in the loop",
+      "newsletterDescription": "Receive new collection drops before anyone else.",
+      "newsletterPlaceholder": "Your email",
+      "newsletterCta": "Subscribe",
+      "rights": "© {year} ElaraBase. All rights reserved.",
+      "vatNumber": "VAT No: {vat}",
+      "crNumber": "CR No: {cr}",
+      "payment": "Accepted payment methods"
+    },
+    "mobileMenu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    }
+  },
+
+  "home": {
+    "hero": {
+      "eyebrow": "New season",
+      "title": "Pieces that choose to stay",
+      "subtitle": "Quietly considered designs, built to live with you longer.",
+      "primaryCta": "Shop the collection",
+      "secondaryCta": "Discover the story"
+    },
+    "categories": {
+      "title": "Browse by category",
+      "subtitle": "Each category is curated, so you spend less time looking."
+    },
+    "featured": {
+      "title": "Elara picks",
+      "subtitle": "Pieces we recommend this week."
+    },
+    "story": {
+      "eyebrow": "About Elara",
+      "title": "Calm felt in the details",
+      "body": "We believe a good product never shouts. We select our materials with intent and design with restraint, so each piece outlasts the season and ages well.",
+      "cta": "About ElaraBase"
+    },
+    "reassurance": {
+      "shipping": {
+        "title": "Free shipping in KSA",
+        "subtitle": "On orders above SAR 250"
+      },
+      "returns": {
+        "title": "14-day easy returns",
+        "subtitle": "Hassle-free, simple steps"
+      },
+      "support": {
+        "title": "Arabic support",
+        "subtitle": "We reply within business hours"
+      },
+      "secure": {
+        "title": "Secure checkout",
+        "subtitle": "Your data, fully protected"
+      }
+    },
+    "newArrivals": {
+      "title": "New arrivals",
+      "cta": "View all"
+    },
+    "bestSellers": {
+      "title": "Best sellers",
+      "cta": "View all"
+    },
+    "editorial": {
+      "title": "From the journal",
+      "subtitle": "Short reads on taste, materials, and choosing well."
+    }
+  },
+
+  "shop": {
+    "title": "Elara shop",
+    "subtitle": "Browse the full catalog, or narrow the view with filters.",
+    "results": {
+      "count": "{count} product",
+      "countPlural": "{count} products",
+      "empty": "No products match your filters.",
+      "emptyHelp": "Try adjusting your filters, or browse the full catalog."
+    },
+    "filters": {
+      "title": "Filters",
+      "open": "Open filters",
+      "close": "Close filters",
+      "clear": "Clear filters",
+      "apply": "Apply",
+      "category": "Category",
+      "collection": "Collection",
+      "price": "Price",
+      "size": "Size",
+      "color": "Color",
+      "availability": "Availability",
+      "inStock": "In stock",
+      "outOfStock": "Out of stock",
+      "priceMin": "From",
+      "priceMax": "To"
+    },
+    "sort": {
+      "label": "Sort by",
+      "newest": "Newest",
+      "bestSelling": "Best selling",
+      "priceAsc": "Price: low to high",
+      "priceDesc": "Price: high to low",
+      "name": "Name"
+    },
+    "view": {
+      "grid": "Grid view",
+      "list": "List view"
+    }
+  },
+
+  "product": {
+    "labels": {
+      "sku": "SKU",
+      "availability": "Availability",
+      "color": "Color",
+      "size": "Size",
+      "selectSize": "Select size",
+      "selectColor": "Select color",
+      "sizeGuide": "Size guide",
+      "material": "Material",
+      "care": "Care",
+      "dimensions": "Dimensions",
+      "weight": "Weight",
+      "shipsFrom": "Ships from",
+      "rating": "Rating",
+      "reviewsCount": "{count} review",
+      "reviewsCountPlural": "{count} reviews",
+      "writeReview": "Write a review",
+      "shareProduct": "Share product"
+    },
+    "stock": {
+      "inStock": "In stock",
+      "lowStock": "Only {count} left",
+      "outOfStock": "Out of stock",
+      "notifyMe": "Notify me when available",
+      "preorder": "Pre-order"
+    },
+    "tabs": {
+      "description": "Description",
+      "details": "Details & material",
+      "shipping": "Shipping & returns",
+      "reviews": "Reviews"
+    },
+    "related": {
+      "title": "You may also like",
+      "completeLook": "Complete the look"
+    },
+    "recentlyViewed": {
+      "title": "Recently viewed"
+    },
+    "trust": {
+      "freeShipping": "Free shipping on orders above SAR 250",
+      "easyReturns": "Easy 14-day returns",
+      "securePayment": "Secure, encrypted payment"
+    }
+  },
+
+  "cart": {
+    "title": "Your cart",
+    "empty": {
+      "title": "Your cart is empty",
+      "subtitle": "You haven't added anything yet. Browse the shop and pick a few favorites.",
+      "cta": "Browse the shop"
+    },
+    "item": {
+      "remove": "Remove",
+      "increase": "Increase quantity",
+      "decrease": "Decrease quantity",
+      "quantityLabel": "Quantity",
+      "color": "Color: {value}",
+      "size": "Size: {value}"
+    },
+    "summary": {
+      "title": "Order summary",
+      "subtotal": "Subtotal",
+      "shipping": "Shipping",
+      "shippingFree": "Free",
+      "shippingCalculated": "Calculated at checkout",
+      "vat": "VAT (15%)",
+      "discount": "Discount",
+      "total": "Total",
+      "promoTitle": "Promo code",
+      "promoPlaceholder": "Enter code",
+      "promoApply": "Apply",
+      "promoApplied": "{code} applied",
+      "promoRemove": "Remove",
+      "checkoutCta": "Checkout",
+      "secureNote": "Payments are processed securely."
+    },
+    "reassurance": {
+      "shipping": "Free shipping in KSA above SAR 250",
+      "returns": "14-day exchange or return",
+      "support": "Arabic support during business hours"
+    }
+  },
+
+  "checkout": {
+    "title": "Checkout",
+    "steps": {
+      "contact": "Contact",
+      "shipping": "Shipping",
+      "payment": "Payment",
+      "review": "Review"
+    },
+    "contact": {
+      "title": "Contact information",
+      "subtitle": "We'll send order updates to this email.",
+      "email": "Email",
+      "phone": "Phone number",
+      "phoneHelp": "We need your phone to coordinate delivery.",
+      "guestNote": "Checking out as a guest. You can create an account later.",
+      "haveAccount": "Have an account?",
+      "loginLink": "Sign in"
+    },
+    "shipping": {
+      "title": "Shipping address",
+      "fullName": "Full name",
+      "country": "Country",
+      "city": "City",
+      "district": "District",
+      "street": "Street",
+      "buildingNumber": "Building number",
+      "postalCode": "Postal code",
+      "additionalNumber": "Additional number",
+      "notes": "Notes for the driver (optional)",
+      "saveAddress": "Save this address for future orders",
+      "shippingMethod": "Shipping method",
+      "methodStandard": "Standard delivery (2-4 business days)",
+      "methodExpress": "Express delivery (1-2 business days)"
+    },
+    "payment": {
+      "title": "Payment method",
+      "card": "Credit / debit card",
+      "cardName": "Name on card",
+      "cardNumber": "Card number",
+      "cardExpiry": "Expiry",
+      "cardCvc": "CVC",
+      "applePay": "Apple Pay",
+      "mada": "mada",
+      "cod": "Cash on delivery",
+      "codFee": "A SAR 20 fee applies for cash on delivery",
+      "billingSame": "Billing address same as shipping"
+    },
+    "review": {
+      "title": "Review your order",
+      "editContact": "Edit contact",
+      "editShipping": "Edit shipping",
+      "editPayment": "Edit payment",
+      "terms": "By placing your order, you agree to our {terms} and {privacy}.",
+      "termsLink": "terms",
+      "privacyLink": "privacy policy",
+      "placeOrder": "Place order",
+      "processing": "Processing your order…"
+    },
+    "success": {
+      "title": "Order received",
+      "subtitle": "Thank you for choosing Elara. We sent the confirmation to {email}.",
+      "orderNumber": "Order number",
+      "estimatedDelivery": "Estimated delivery",
+      "trackOrder": "Track your order",
+      "continueShopping": "Continue shopping",
+      "createAccountPrompt": "Create an account to track this order easily"
+    }
+  },
+
+  "account": {
+    "title": "My account",
+    "greeting": "Hi, {name}",
+    "tabs": {
+      "overview": "Overview",
+      "orders": "Orders",
+      "addresses": "Addresses",
+      "wishlist": "Wishlist",
+      "returns": "Returns",
+      "notifications": "Notifications",
+      "security": "Security",
+      "sessions": "Devices"
+    },
+    "overview": {
+      "recentOrders": "Recent orders",
+      "savedAddresses": "Saved addresses",
+      "wishlistCount": "{count} items in wishlist",
+      "noOrders": "No orders yet."
+    },
+    "orders": {
+      "title": "My orders",
+      "empty": "You haven't placed any orders yet.",
+      "statusPending": "Processing",
+      "statusConfirmed": "Confirmed",
+      "statusPacked": "Ready to ship",
+      "statusShipped": "On the way",
+      "statusDelivered": "Delivered",
+      "statusCancelled": "Cancelled",
+      "statusReturned": "Returned",
+      "viewDetails": "Order details",
+      "reorder": "Reorder",
+      "requestReturn": "Request return"
+    },
+    "addresses": {
+      "title": "My addresses",
+      "addNew": "Add a new address",
+      "default": "Default address",
+      "setDefault": "Set as default",
+      "empty": "No saved addresses yet."
+    },
+    "wishlist": {
+      "title": "Wishlist",
+      "empty": "No items in your wishlist.",
+      "moveToCart": "Move to cart"
+    },
+    "returns": {
+      "title": "Return requests",
+      "empty": "No return requests yet.",
+      "newRequest": "New return request",
+      "reason": "Reason for return",
+      "reasonOptions": {
+        "size": "Wrong size / fit",
+        "quality": "Quality didn't meet expectations",
+        "damaged": "Arrived damaged",
+        "wrongItem": "Received the wrong item",
+        "other": "Other reason"
+      },
+      "notes": "Additional details",
+      "submit": "Submit return request"
+    },
+    "notifications": {
+      "title": "Notifications",
+      "empty": "No notifications.",
+      "markAllRead": "Mark all as read",
+      "preferences": "Notification preferences",
+      "channels": {
+        "email": "Email",
+        "sms": "SMS",
+        "push": "Web push"
+      },
+      "topics": {
+        "orderUpdates": "Order updates",
+        "promotions": "Promotions",
+        "newArrivals": "New arrivals",
+        "newsletter": "Newsletter"
+      }
+    },
+    "security": {
+      "title": "Security settings",
+      "changePassword": "Change password",
+      "currentPassword": "Current password",
+      "newPassword": "New password",
+      "confirmPassword": "Confirm password",
+      "twoFactor": "Two-step verification",
+      "twoFactorComing": "Coming soon — verify with a code sent to your phone.",
+      "deleteAccount": "Delete account",
+      "deleteWarning": "This is permanent and cannot be undone."
+    },
+    "sessions": {
+      "title": "Active devices",
+      "current": "This device",
+      "lastActive": "Last active",
+      "signOutAll": "Sign out of all devices",
+      "empty": "No other sessions."
+    },
+    "profile": {
+      "title": "Personal details",
+      "firstName": "First name",
+      "lastName": "Last name",
+      "email": "Email",
+      "phone": "Phone",
+      "language": "Interface language"
+    }
+  },
+
+  "auth": {
+    "login": {
+      "title": "Sign in",
+      "subtitle": "Welcome back to Elara.",
+      "email": "Email",
+      "password": "Password",
+      "remember": "Remember me",
+      "forgot": "Forgot your password?",
+      "submit": "Sign in",
+      "noAccount": "Don't have an account?",
+      "createAccount": "Create an account",
+      "guestCheckout": "Continue as guest"
+    },
+    "signup": {
+      "title": "Create your account",
+      "subtitle": "An account makes ordering and tracking effortless.",
+      "firstName": "First name",
+      "lastName": "Last name",
+      "email": "Email",
+      "phone": "Phone",
+      "password": "Password",
+      "passwordHelp": "At least 8 characters with a number and an uppercase letter.",
+      "marketingOptIn": "I'd like to receive new Elara offers.",
+      "terms": "By creating an account, you agree to our {terms} and {privacy}.",
+      "submit": "Create account",
+      "haveAccount": "Already have an account?",
+      "loginLink": "Sign in"
+    },
+    "forgot": {
+      "title": "Forgot your password?",
+      "subtitle": "Enter your email and we'll send you a reset link.",
+      "email": "Email",
+      "submit": "Send the link",
+      "sentTitle": "Link sent",
+      "sentBody": "If that email is on file, you'll receive a message within minutes.",
+      "backToLogin": "Back to sign in"
+    },
+    "reset": {
+      "title": "Reset your password",
+      "subtitle": "Choose a new password for your account.",
+      "newPassword": "New password",
+      "confirmPassword": "Confirm password",
+      "submit": "Update password",
+      "successTitle": "Password updated",
+      "successBody": "You can now sign in with your new password.",
+      "expiredTitle": "Link expired",
+      "expiredBody": "This reset link is no longer valid. Please request a new one."
+    },
+    "verifyEmail": {
+      "title": "Verify your email",
+      "subtitle": "We sent a verification link to {email}.",
+      "resend": "Resend the link",
+      "resent": "We sent the link again.",
+      "checkSpam": "Can't find it? Check your spam folder.",
+      "verifying": "Verifying…",
+      "successTitle": "Email verified",
+      "successBody": "Thank you. You can now continue shopping.",
+      "errorTitle": "Verification failed",
+      "errorBody": "This link is invalid or has expired."
+    },
+    "otpPlaceholder": {
+      "title": "Code verification",
+      "subtitle": "Code verification will be available soon.",
+      "note": "We're preparing this feature to harden account security. It won't disrupt the current shopping experience."
+    }
+  },
+
+  "admin": {
+    "title": "Admin",
+    "nav": {
+      "overview": "Overview",
+      "orders": "Orders",
+      "fulfillment": "Fulfillment",
+      "products": "Products",
+      "variants": "Variants",
+      "categories": "Categories",
+      "collections": "Collections",
+      "inventory": "Inventory",
+      "customers": "Customers",
+      "discounts": "Discount codes",
+      "reviews": "Reviews",
+      "banners": "Banners",
+      "homepage": "Homepage manager",
+      "settings": "Settings",
+      "staff": "Staff & roles",
+      "audit": "Audit log",
+      "emails": "Email templates",
+      "otpSettings": "OTP settings (soon)"
+    },
+    "overview": {
+      "todayRevenue": "Today's revenue",
+      "todayOrders": "Today's orders",
+      "pendingOrders": "Pending orders",
+      "lowStock": "Low-stock items",
+      "newCustomers": "New customers this week",
+      "recentOrders": "Recent orders",
+      "topProducts": "Top products"
+    },
+    "orders": {
+      "title": "Orders",
+      "search": "Search by order number or customer",
+      "filters": {
+        "all": "All",
+        "pending": "Pending",
+        "confirmed": "Confirmed",
+        "packed": "Packed",
+        "shipped": "Shipped",
+        "delivered": "Delivered",
+        "cancelled": "Cancelled",
+        "returned": "Returned"
+      },
+      "columns": {
+        "number": "Order #",
+        "customer": "Customer",
+        "items": "Items",
+        "total": "Total",
+        "status": "Status",
+        "payment": "Payment",
+        "date": "Date"
+      },
+      "actions": {
+        "markPacked": "Mark as packed",
+        "markShipped": "Mark as shipped",
+        "markDelivered": "Mark as delivered",
+        "cancel": "Cancel order",
+        "refund": "Refund",
+        "printInvoice": "Print invoice",
+        "printLabel": "Print shipping label"
+      }
+    },
+    "products": {
+      "title": "Products",
+      "addNew": "Add product",
+      "bulkActions": "Bulk actions",
+      "import": "Import",
+      "export": "Export",
+      "form": {
+        "name": "Product name",
+        "slug": "Slug",
+        "description": "Description",
+        "category": "Category",
+        "collection": "Collection",
+        "price": "Price",
+        "compareAtPrice": "Compare-at price",
+        "cost": "Cost",
+        "sku": "SKU",
+        "barcode": "Barcode",
+        "weight": "Weight (g)",
+        "media": "Media",
+        "status": "Status",
+        "statusDraft": "Draft",
+        "statusActive": "Active",
+        "statusArchived": "Archived",
+        "variants": "Variants (size / color)",
+        "inventory": "Inventory",
+        "seo": "SEO",
+        "metaTitle": "Meta title",
+        "metaDescription": "Meta description",
+        "saveDraft": "Save as draft",
+        "publish": "Publish",
+        "bilingualNote": "Fill in both Arabic and English before publishing."
+      }
+    },
+    "customers": {
+      "title": "Customers",
+      "search": "Search by name or email",
+      "columns": {
+        "name": "Name",
+        "email": "Email",
+        "phone": "Phone",
+        "ordersCount": "Orders",
+        "totalSpend": "Total spend",
+        "lastOrder": "Last order",
+        "joined": "Joined"
+      }
+    },
+    "discounts": {
+      "title": "Discount codes",
+      "addNew": "New code",
+      "form": {
+        "code": "Code",
+        "type": "Type",
+        "typePercent": "Percentage",
+        "typeFixed": "Fixed amount",
+        "typeFreeShipping": "Free shipping",
+        "value": "Value",
+        "minSubtotal": "Minimum subtotal",
+        "startsAt": "Starts at",
+        "endsAt": "Ends at",
+        "usageLimit": "Usage limit",
+        "perCustomerLimit": "Per-customer limit",
+        "appliesTo": "Applies to",
+        "appliesAll": "All products",
+        "appliesCategory": "Specific categories",
+        "appliesProducts": "Specific products"
+      }
+    },
+    "common": {
+      "saved": "Saved",
+      "savedAt": "Last saved {time}",
+      "unsavedChanges": "You have unsaved changes",
+      "publishBilingual": "Both Arabic and English must be filled in before publishing."
+    }
+  },
+
+  "errors": {
+    "generic": "Something went wrong. Please try again.",
+    "network": "Connection failed. Check your internet and try again.",
+    "notFound": {
+      "title": "Page not found",
+      "subtitle": "The link you followed isn't available. Head back home.",
+      "cta": "Back to home"
+    },
+    "serverError": {
+      "title": "Server error",
+      "subtitle": "We're on it. Please try again shortly.",
+      "cta": "Try again"
+    },
+    "unauthorized": "You need to sign in to view this page.",
+    "forbidden": "You don't have permission to access this.",
+    "rateLimit": "Too many attempts. Try again in a few minutes.",
+    "outOfStock": "This item is currently out of stock.",
+    "checkoutFailed": "We couldn't process your payment. No charge was made — please try again.",
+    "addressInvalid": "Address looks incomplete. Please check the fields.",
+    "promoInvalid": "That code is invalid or has expired.",
+    "session": {
+      "expired": "Your session expired. Please sign in again."
+    },
+    "form": {
+      "title": "Couldn't save",
+      "subtitle": "Please review the highlighted fields and try again."
+    }
+  },
+
+  "success": {
+    "addedToCart": "Added to cart",
+    "addedToWishlist": "Added to wishlist",
+    "removedFromWishlist": "Removed from wishlist",
+    "savedChanges": "Changes saved",
+    "addressSaved": "Address saved",
+    "passwordUpdated": "Password updated",
+    "verificationSent": "Verification email sent",
+    "subscribed": "You're subscribed",
+    "copied": "Copied"
+  },
+
+  "validation": {
+    "required": "This field is required",
+    "email": "Enter a valid email address",
+    "phone": "Enter a valid phone number",
+    "phoneSaudi": "Enter a Saudi mobile number (05XXXXXXXX)",
+    "minLength": "Must be at least {min} characters",
+    "maxLength": "Must be at most {max} characters",
+    "minValue": "Must be at least {min}",
+    "maxValue": "Must be at most {max}",
+    "passwordMatch": "Passwords don't match",
+    "passwordWeak": "Password is weak. Add a number and an uppercase letter.",
+    "termsRequired": "You must agree to the terms",
+    "postalCode": "Postal code must be 5 digits",
+    "cardNumber": "Card number is invalid",
+    "cardExpiry": "Expiry date is invalid",
+    "cardCvc": "CVC code is invalid",
+    "fileType": "Unsupported file type",
+    "fileSize": "File exceeds the maximum size"
+  },
+
+  "seo": {
+    "titleTemplate": "%s | ElaraBase",
+    "keywords": "ElaraBase, Saudi online store, premium fashion, KSA ecommerce, curated lifestyle",
+    "home": {
+      "title": "ElaraBase — Quietly considered pieces",
+      "description": "ElaraBase: a curated collection of premium pieces in a calm, refined style. Free shipping in KSA above SAR 250."
+    },
+    "shop": {
+      "title": "Shop all products",
+      "description": "Browse the full ElaraBase collection of carefully selected pieces."
+    },
+    "product": {
+      "titleTemplate": "{name} — ElaraBase"
+    },
+    "cart": {
+      "title": "Your cart",
+      "description": "Review your items before checking out."
+    },
+    "checkout": {
+      "title": "Checkout"
+    },
+    "account": {
+      "title": "My account"
+    }
+  }
+}

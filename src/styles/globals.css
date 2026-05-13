@@ -1,0 +1,257 @@
+@import 'tailwindcss';
+
+/* ---------- ElaraBase design tokens (Tailwind v4 @theme) ---------- */
+/* The palette is deliberately restrained: warm neutrals + a single
+   muted-bronze accent. No purple/blue gradients anywhere. */
+
+@theme {
+  /* Surfaces */
+  --color-ink: #0F0E0C;            /* primary text on light */
+  --color-ink-soft: #2A2724;        /* secondary text */
+  --color-ink-muted: #6B655E;       /* tertiary text, captions */
+  --color-line: #E7E2DA;            /* hairline borders */
+  --color-line-strong: #D6CFC3;     /* heavier borders, inputs */
+  --color-canvas: #FAF8F4;          /* page background (warm bone) */
+  --color-surface: #FFFFFF;         /* card / sheet background */
+  --color-surface-2: #F2EDE4;       /* alt surface, hover rows */
+  --color-overlay: rgba(15, 14, 12, 0.48);
+
+  /* Brand accent — restrained bronze. ONE accent only. */
+  --color-accent: #8C6A3A;
+  --color-accent-strong: #6F5128;
+  --color-accent-soft: #EFE5D3;
+
+  /* Status — semantic, low-chroma */
+  --color-success: #2F6F4F;
+  --color-success-soft: #E2EEE7;
+  --color-warning: #8A6A1F;
+  --color-warning-soft: #F4EAD0;
+  --color-danger: #8A2E2A;
+  --color-danger-soft: #F2DEDC;
+  --color-info: #2A4F6B;
+  --color-info-soft: #DEE7EE;
+
+  /* Typography */
+  --font-sans-en: 'Satoshi', 'Inter', ui-sans-serif, system-ui, -apple-system,
+    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-sans-ar: 'IBM Plex Sans Arabic', 'Noto Naskh Arabic',
+    'Segoe UI Arabic', Tahoma, system-ui, sans-serif;
+  --font-display-en: 'Satoshi', Georgia, 'Times New Roman', serif;
+  --font-display-ar: 'IBM Plex Sans Arabic', 'Noto Naskh Arabic', serif;
+
+  /* Type scale (mobile-first, then up at >=md via clamp) */
+  --text-xs: 0.75rem;     --text-xs--line-height: 1rem;
+  --text-sm: 0.875rem;    --text-sm--line-height: 1.25rem;
+  --text-base: 1rem;      --text-base--line-height: 1.5rem;
+  --text-lg: 1.125rem;    --text-lg--line-height: 1.625rem;
+  --text-xl: 1.25rem;     --text-xl--line-height: 1.75rem;
+  --text-2xl: 1.5rem;     --text-2xl--line-height: 2rem;
+  --text-3xl: 1.875rem;   --text-3xl--line-height: 2.25rem;
+  --text-4xl: 2.25rem;    --text-4xl--line-height: 2.5rem;
+  --text-5xl: 3rem;       --text-5xl--line-height: 1.1;
+  --text-6xl: clamp(2.5rem, 6vw, 4.25rem); --text-6xl--line-height: 1.05;
+
+  /* Spacing (4px scale; logical via Tailwind utilities) */
+  --spacing: 0.25rem;
+
+  /* Radii (premium = restrained roundness) */
+  --radius-xs: 2px;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-2xl: 24px;
+  --radius-full: 9999px;
+
+  /* Shadows — soft, never glowy */
+  --shadow-xs: 0 1px 1px rgba(15,14,12,0.04);
+  --shadow-sm: 0 1px 2px rgba(15,14,12,0.05), 0 1px 1px rgba(15,14,12,0.04);
+  --shadow-md: 0 4px 12px rgba(15,14,12,0.06), 0 2px 4px rgba(15,14,12,0.04);
+  --shadow-lg: 0 12px 32px rgba(15,14,12,0.08), 0 4px 12px rgba(15,14,12,0.05);
+
+  /* Layout */
+  --container-prose: 65ch;
+  --container-narrow: 720px;
+  --container-base: 1200px;
+  --container-wide: 1440px;
+}
+
+/* ---------- Base reset / global rules ---------- */
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-canvas);
+    color: var(--color-ink);
+    font-feature-settings: 'ss01', 'cv11', 'kern';
+  }
+
+  /* Locale-driven typography. The <html> element gets `lang` and `dir`
+     attributes from the layout; we switch font stacks accordingly. */
+  html[lang^='ar'] body {
+    font-family: var(--font-sans-ar);
+    font-feature-settings: 'kern', 'liga', 'calt';
+    letter-spacing: 0;
+  }
+
+  html[lang^='en'] body {
+    font-family: var(--font-sans-en);
+    letter-spacing: -0.005em;
+  }
+
+  /* Headings */
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    color: var(--color-ink);
+    text-wrap: balance;
+  }
+
+  html[lang^='ar'] h1,
+  html[lang^='ar'] h2,
+  html[lang^='ar'] h3,
+  html[lang^='ar'] h4 {
+    font-family: var(--font-display-ar);
+    font-weight: 600;
+    line-height: 1.25;
+  }
+  html[lang^='en'] h1,
+  html[lang^='en'] h2,
+  html[lang^='en'] h3,
+  html[lang^='en'] h4 {
+    font-family: var(--font-display-en);
+    font-weight: 600;
+    letter-spacing: -0.02em;
+  }
+
+  /* Focus ring — visible, not garish */
+  :where(a, button, [role='button'], input, select, textarea):focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+    border-radius: var(--radius-sm);
+  }
+
+  /* Form elements default to the canvas, not browser blue */
+  ::selection {
+    background-color: var(--color-accent-soft);
+    color: var(--color-ink);
+  }
+
+  /* RTL/LTR icon flipping helper — apply class `flip-on-rtl` to icons
+     that should mirror (arrows, chevrons). Brand marks must NOT flip. */
+  [dir='rtl'] .flip-on-rtl {
+    transform: scaleX(-1);
+  }
+
+  /* Native scrollbar polish, light-mode only */
+  ::-webkit-scrollbar { width: 10px; height: 10px; }
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--color-line-strong);
+    border-radius: var(--radius-full);
+  }
+  ::-webkit-scrollbar-thumb:hover { background-color: var(--color-ink-muted); }
+}
+
+/* ---------- Component primitives ---------- */
+
+@layer components {
+  .container-base {
+    width: 100%;
+    max-width: var(--container-base);
+    margin-inline: auto;
+    padding-inline: 1rem;
+  }
+  @media (min-width: 768px) {
+    .container-base { padding-inline: 2rem; }
+  }
+
+  /* Hairline divider that respects RTL/LTR */
+  .hairline {
+    border-block-start: 1px solid var(--color-line);
+  }
+
+  /* Premium button (primary) */
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding-block: 0.875rem;
+    padding-inline: 1.5rem;
+    border-radius: var(--radius-sm);
+    background-color: var(--color-ink);
+    color: var(--color-surface);
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    transition: background-color 150ms ease, transform 150ms ease;
+  }
+  .btn-primary:hover { background-color: var(--color-ink-soft); }
+  .btn-primary:active { transform: translateY(1px); }
+
+  .btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding-block: 0.8125rem;
+    padding-inline: 1.5rem;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--color-line-strong);
+    background-color: transparent;
+    color: var(--color-ink);
+    font-weight: 500;
+    transition: border-color 150ms ease, background-color 150ms ease;
+  }
+  .btn-secondary:hover {
+    border-color: var(--color-ink);
+    background-color: var(--color-surface-2);
+  }
+
+  .btn-ghost {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
+    color: var(--color-ink-soft);
+    font-weight: 500;
+    transition: color 150ms ease;
+  }
+  .btn-ghost:hover { color: var(--color-ink); }
+
+  /* Input baseline */
+  .input {
+    width: 100%;
+    height: 3rem;
+    padding-inline: 0.875rem;
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-line-strong);
+    border-radius: var(--radius-sm);
+    color: var(--color-ink);
+    font-size: var(--text-base);
+    transition: border-color 150ms ease, box-shadow 150ms ease;
+  }
+  .input::placeholder { color: var(--color-ink-muted); }
+  .input:focus {
+    border-color: var(--color-ink);
+    box-shadow: 0 0 0 3px rgba(140, 106, 58, 0.18);
+    outline: none;
+  }
+  .input[aria-invalid='true'] {
+    border-color: var(--color-danger);
+    box-shadow: 0 0 0 3px rgba(138, 46, 42, 0.12);
+  }
+}
+
+/* ---------- Utility additions ---------- */
+
+@utility text-balance { text-wrap: balance; }
+@utility text-pretty { text-wrap: pretty; }
