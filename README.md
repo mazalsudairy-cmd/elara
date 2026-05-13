@@ -35,7 +35,7 @@
 | 3 | [`src/i18n/routing.ts`](./src/i18n/routing.ts)      | Locale + pathname routing                |
 | 4 | [`src/i18n/request.ts`](./src/i18n/request.ts)      | next-intl server config                  |
 | 5 | [`src/middleware.ts`](./src/middleware.ts)          | Locale detection + cookie hardening      |
-| 6 | [`src/lib/fonts.ts`](./src/lib/fonts.ts)            | IBM Plex Sans Arabic + Satoshi loading   |
+| 6 | [`src/lib/fonts.ts`](./src/lib/fonts.ts)            | IBM Plex Sans Arabic + Inter (Google)    |
 | 7 | [`src/app/[locale]/layout.tsx`](./src/app/[locale]/layout.tsx) | Root layout, metadata, hreflang |
 | 8 | [`src/components/LanguageSwitcher.tsx`](./src/components/LanguageSwitcher.tsx) | Header + menu switcher |
 | 9 | [`src/hooks/useDirection.ts`](./src/hooks/useDirection.ts)    | Client direction helper        |
@@ -48,19 +48,20 @@ Supporting:
 - `src/app/[locale]/page.tsx`, `not-found.tsx` — minimal screens so the app boots end-to-end.
 - `.env.example` — every env var Phase 1 will need (plus reserved OTP keys).
 
+## Vercel
+
+Deployments must build **the latest `main` on GitHub** (not an old commit). In the build log, the line `Cloning ... (Commit: …)` must match the latest commit on [github.com/mazalsudairy-cmd/elara](https://github.com/mazalsudairy-cmd/elara). If the log shows an **old** short SHA (for example `d2c4c79`), Vercel is not building the current `main` — redeploy from **Git** tab or trigger a new push.
+
 ## Quick start
 
 ```bash
 # 1) install
 npm install
 
-# 2) (optional) drop Satoshi woff2 files under public/fonts/satoshi/
-#    OR swap localFont() for next/font/google `Inter` in src/lib/fonts.ts
-
-# 3) copy env
+# 2) copy env
 cp .env.example .env.local
 
-# 4) dev server
+# 3) dev server
 npm run dev
 ```
 
