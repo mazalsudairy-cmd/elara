@@ -6,6 +6,9 @@ const withNextIntl = createNextIntlPlugin('./src/i18n/request.ts');
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
+  // Next.js 15.5+: typed routes live here — never use `experimental.typedRoutes`.
+  // Off: next-intl localized pathnames + dynamic segments are easier without strict href typing.
+  typedRoutes: false,
   experimental: {
     optimizePackageImports: ['next-intl']
   },
